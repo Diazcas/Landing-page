@@ -8,8 +8,12 @@
 
 #titulo{
     transition-duration: 1s;
-    margin-top: 100px;
+    margin-top: 550px;
     width: 60%;
+}
+
+#titulo::before{
+    margin-top: -500px;
 }
 
 html{
