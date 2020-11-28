@@ -5,3 +5,9 @@
     background-position-x: -70px;
     background-position-y: -50px;
 }
+
+#titulo{
+    transition-duration: 1s;
+    margin-top: 100px;
+    width: 60%;
+}
