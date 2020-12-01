@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/styles2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+        rel="stylesheet" type="text/css" />
+</head>
+
+
+
+<body class="backimg">
+    <div class="card" style="width: 35rem; margin-left: auto; margin-right: auto; margin-top: 100px;">
+        <h2 style="margin-left: auto; margin-right: auto; margin-top: 15px;">NOVA</h2>
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <input id = "user" type="email" class="form-control" id="user" aria-describedby="emailHelp"
+                        placeholder="Usuario">
+                </div>
+                <div class="form-group">
+                    <input id= "password" type="password" class="form-control" id="password" placeholder="Contraseña">
+                </div>
+                <button type="button" class="btn btn-primary form-control" onclick="entrar()">Inciar sesión</button>
+                <div id ="mensaje">
+    
+                </div>
+                <h4></h4>
+                <a style="font-size: small;  margin-left: auto; margin-right: auto; text-align: center; display: inline-block; width: 100%; "
+                    href="#">¿Olvidaste tu contraseña?</a>
+                <hr>
+
+                <div class="form-inline" style="  display: flex; align-items: center; justify-content: center;">
+                    <p style="padding:3px; font-size: small;text-align: center; display: inline-block; ">¿No tienes
+                        cuenta? </p>
+                    <p><a style="padding:3px; font-size:small; text-align: center; display: inline-block;"
+                            href="registro.html"> Regístrate</a></p>
+        
+                </div>
+            </form>
+        </div>
+    </div>
+    <br>
+</body>
+</html>
+<script>
+    function entrar(){
+        var user = document.getElementById("user").value;
+        var password = document.getElementById("password").value;
+            if (user == "nova@nova.com" && password == "nova") {
+                console.log("hola")
+                document.location.href="principal.html" 
+            }
+            else{
+                document.getElementById("mensaje").innerHTML +=`<p style = "color:red">Datos incorrectos</p>`
+            }
+    }
+    </script>

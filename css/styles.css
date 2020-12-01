@@ -432,6 +432,10 @@ small,
   font-weight: 400;
 }
 
+.lfloat {
+    float: left !important;
+}
+
 mark,
 .mark {
   padding: 0.2em;
